@@ -6,6 +6,16 @@ h1 {
         border-bottom: 3px dotted #77d;
 }
 
+/* START:notice */
+#notice {
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+/* END:notice */
+
 /* Styles for products/index */
 
 #product-list table {
@@ -140,6 +150,12 @@ h1 {
   font-weight: bold;
   margin-right: 2em;
 }
+
+/* START:inline */
+#store .entry form, #store .entry form div {
+  display: inline;
+}
+/* END:inline */
 
 /* The error box */
 
