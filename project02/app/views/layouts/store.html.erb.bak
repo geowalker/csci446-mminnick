@@ -18,6 +18,13 @@
       <a href="http://www..../contact">Contact</a><br />
     </div>
     <div id="main">
+      <!-- START_HIGHLIGHT -->
+      <!-- START:flash -->
+      <% if flash[:notice] -%>
+        <div id="notice"><%= flash[:notice] %></div>
+      <% end -%>
+      <!-- END:flash -->
+      <!-- END_HIGHLIGHT -->
       <%= yield :layout %>
     </div>
   </div>
