@@ -17,7 +17,14 @@ class StoreController < ApplicationController
     redirect_to_index("Invalid product")
   end
   
-
+  def checkout
+    @cart = find_cart
+    if @cart.items.empty?
+      redirect_to_index("Your cart is empty")
+    else
+      @order = Order.new
+    end
+  end
 
   
   def empty_cart
