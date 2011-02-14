@@ -1,11 +1,16 @@
-<h1>Listing articles</h1>
+<h1 style="text-align:center">Articl.es</h1>
+<h2 style="text-align:center">with a name .com hipsters love</h2>
+<br />
+
+
+<h3> All the Worlds Articles </h3>     <%= link_to 'Create a article', create_article_path %>
 
 <table>
   <tr>
     <th>Title</th>
-    <th>Author name</th>
+    <th>Author Name</th>
     <th>Body</th>
-    <th>Creation date</th>
+    <th>Creation Date</th>
   </tr>
 
 <% @articles.each do |article| %>
@@ -21,6 +26,3 @@
 <% end %>
 </table>
 
-<br />
-
-<%= link_to 'New article', new_article_path %>
