@@ -1,11 +1,11 @@
-<h1>Articl.es</h1>
+<h1>Listing articles</h1>
 
 <table>
   <tr>
     <th>Title</th>
-    <th>Author Name</th>
+    <th>Author name</th>
     <th>Body</th>
-    <th>Creation Date</th>
+    <th>Creation date</th>
   </tr>
 
 <% @articles.each do |article| %>
